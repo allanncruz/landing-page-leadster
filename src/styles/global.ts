@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle<{}>`
   }
 
   body {
-    font-size: 16;
+    font-size: 16px;
   }
 `;
 
