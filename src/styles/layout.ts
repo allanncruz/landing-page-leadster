@@ -5,7 +5,7 @@ const Container = styled.div`
   padding: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 350px;
+  max-width: 1150px;
   position: relative;
 `;
 

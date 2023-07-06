@@ -12,10 +12,10 @@ const AppBar = () => {
   return (
     <NavBar>
       <Container>
-        <NavbarBrand>
-          <Link href="/">
-            <img src="/logo.png" alt="" />
-          </Link>
+        <NavbarBrand href="/">
+          <img 
+            src="/logo.png" 
+            alt="Leadster - Ferramenta de Geração de Leads" />
         </NavbarBrand>
       </Container>
     </NavBar>
