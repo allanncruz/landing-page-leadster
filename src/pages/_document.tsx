@@ -1,5 +1,7 @@
-import Document, { DocumentContext, DocumentInitialProps } from 'next/document'
+import Document, { DocumentContext, DocumentInitialProps, Html } from 'next/document'
+import Head from 'next/head'
 import { ServerStyleSheet } from 'styled-components'
+
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -19,10 +21,18 @@ export default class MyDocument extends Document {
       return {
         ...initialProps,
         styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
+          <Html lang='pt-br'>
+            <head>
+              <title>Landing page Leadsters</title>
+              <meta name="description" content="Desafio Frontend Leadster" />
+              <meta name="viewport" content="width=device-width, initial-scale=1" />
+              <link rel="icon" href="/favicon.ico" />
+            </head>
+            <main>
+              {initialProps.styles}
+              {sheet.getStyleElement()}
+            </main>
+          </Html>
         ),
       }
     } finally {
