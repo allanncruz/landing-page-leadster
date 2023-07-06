@@ -15,4 +15,5 @@ export const NavbarBrand = styled(Link)`
   z-index: 99;
   position: relative;
   margin: 0 auto;
+  display: block;
 `;
